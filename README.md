@@ -91,7 +91,7 @@ Build frontend application
 
 Start PHP server
 
-    run php spark serve --port 8081
+    run php spark serve --port 8080
 
 Testing GraphQL queries/mutations
 
@@ -101,7 +101,7 @@ Build frontend application for GraphiQL interface
 
 Start the PHP server
 
-    run php spark serve --port 8081
+    run php spark serve --port 8080
 
 Open application
 
