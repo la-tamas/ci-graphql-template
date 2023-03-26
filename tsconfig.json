@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "dom",
+            "DOM.Iterable",
+            "esnext",
+            "es7",
+        ],
+        "target": "ESNext",
+        "downlevelIteration": true,
+        "noImplicitAny": true,
+        "useDefineForClassFields": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "strictNullChecks": true,
+        "sourceMap": true,
+        "strictPropertyInitialization": true,
+        "noEmit": false,
+        "jsx": "react-jsx",
+        "typeRoots": ["./react/types"],
+        "types": ["node"]
+    },
+    "include": ["react", "react/types/**/*.d.ts"],
+    "exclude": [
+        "node_modules",
+        "app",
+        "public",
+        "system",
+        "tests",
+        "writeable"
+    ]
+}

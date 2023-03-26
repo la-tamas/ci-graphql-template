@@ -1,0 +1,22 @@
+schema {
+  query: QueryType
+  mutation: MutationType
+}
+
+type QueryType {
+  getTranslations(language: String!): [Translation]!
+}
+
+type MutationType {
+  demoMutation: BaseResponseType!
+}
+
+type Translation {
+  code: String!
+  value: String
+}
+
+type BaseResponseType {
+  success: Boolean!
+  message: String
+}
