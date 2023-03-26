@@ -52,3 +52,57 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - json (enabled by default - don't turn it off)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+Installing the app
+
+All commands should be executed in the root folder
+
+With PHP ^7.3 in PATH and composer installed
+
+    run composer install
+
+With node ^14.* and npm installed
+
+    run npm install
+    run npm run build
+
+Make sure you have database setup as it is in the .env file.
+
+The defaults are
+
+    database.default.hostname = host
+    database.default.database = database
+    database.default.username = user
+    database.default.password = password
+
+You can run all migrations with
+
+    php spark migrate
+
+Starting the app
+
+Optionally modify base URL
+
+    optional Open Config/App.php and edit variable
+
+Build frontend application
+
+    run npm run build
+
+Start PHP server
+
+    run php spark serve --port 8081
+
+Testing GraphQL queries/mutations
+
+Build frontend application for GraphiQL interface
+
+    run npm run build:graphiql
+
+Start the PHP server
+
+    run php spark serve --port 8081
+
+Open application
+
+    Access the BASE_URL/graphiql page
